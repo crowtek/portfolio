@@ -20,7 +20,7 @@ export const Home = () => {
       <div className="text-center relative z-10 flex flex-col">
         {/* Title Section */}
         <motion.div variants={slideInLeft} initial="initial" animate="animate" transition={{ type: 'spring', stiffness: 100, duration: 1, delay: 2 }}>
-          <h3>👋Hi, my name is Meik and I am a Frontend Developer</h3>
+          <h3>👋Hallo, mein Name ist Meik und ich bin Frontend-Entwickler</h3>
           <h1 className="leading-[1.8] scale-y-[1.8] scale-x-[1.5] tracking-tighter title">Frontend Developer</h1>
         </motion.div>
 
@@ -29,8 +29,8 @@ export const Home = () => {
         </motion.div>
 
         {/* Location & Tech Icons */}
-        <motion.div variants={fadeInUp} initial="initial" animate="animate" transition={{ duration: 1, delay: 2.5 }} className="flex justify-between items-center gap-6 py-6">
-          <p className="text-4xl md:text-3xl text-gray-500 mb-8">Based in Germany, Hamburg</p>
+        <motion.div variants={fadeInUp} initial="initial" animate="animate" transition={{ duration: 1, delay: 2.5 }} className="flex justify-between items-center gap-10 py-6 w-6xl">
+          <p className="text-4xl md:text-3xl text-black mb-8">Based in Germany, Hamburg</p>
           <div className="flex items-center gap-4">
             {techIcons.map((icon, index) => (
               <motion.img key={index} src={icon.src} alt={icon.alt} width={50} height={50} />
@@ -40,13 +40,13 @@ export const Home = () => {
 
         {/* Buttons */}
         <motion.div variants={fadeInUp} initial="initial" animate="animate" transition={{ duration: 1, delay: 1 }} className="flex justify-center space-x-4 mt-8">
-          <LinkButton text="View Projects" link="#projects" type="primary" />
-          <LinkButton text="Contact Me" link="#contact" />
+          <LinkButton text="Meine Projekte" link="#projects" type="primary" />
+          <LinkButton text="Kontakt" link="#contact" />
         </motion.div>
       </div>
 
       {/* Background 3D Element */}
-      <div className="absolute inset-0 z-1 opacity-1">
+      <div className="absolute top-0 left-0 w-full h-full">
         <Background3d />
       </div>
     </section>

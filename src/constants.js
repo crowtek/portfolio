@@ -9,7 +9,12 @@ export const frontendSkills = [
   'React Native',
   'Firebase',
 ];
-export const backendSkills = ['Node.js', 'Python', 'AWS', 'MongoDB', 'GraphQL'];
+export const MenuItems = [
+  { label: "Home", href: "#home" },
+  { label: "About", href: "#about" },
+  { label: "Projects", href: "#projects" },
+  { label: "Contact", href: "#contact" },
+];
 
 export const SkillsText = [
   {

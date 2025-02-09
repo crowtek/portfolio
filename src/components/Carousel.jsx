@@ -1,26 +1,22 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { useRef } from 'react';
 import { frontendSkills } from '../constants';
+import { carouselScroll } from './animations';
 
 const Carousel = () => {
-  const carouselRef = useRef(null);
-
-  // Track the scroll position of the entire page
   const { scrollYProgress } = useScroll();
-
-  // Move the carousel left based on scroll (adjust values for speed)
-  const translateX = useTransform(scrollYProgress, [0, 1], [0, -500]); // Moves left up to -1000px
+  const translateX = useTransform(scrollYProgress, carouselScroll.inputRange, carouselScroll.outputRange);
 
   return (
-    <div ref={carouselRef} className='w-full overflow-hidden py-4 bg-gray-100 flex justify-center mt-20 '>
+    <div className="w-full overflow-hidden py-4 flex justify-center mt-20">
       <motion.div
-        className='carousel flex space-x-4 whitespace-nowrap w-max'
-        style={{ x: translateX }} // Moves dynamically with scroll
+        className="carousel flex space-x-4 whitespace-nowrap w-max"
+        style={{ x: translateX }}
       >
         {[...frontendSkills, ...frontendSkills].map((item, index) => (
           <div
             key={index}
-            className='min-w-[200px] bg-white rounded-full px-6 py-2 text-center shadow-md text-lg font-semibold'>
+            className="min-w-[200px] text-stone-300 rounded-full px-12 py-2 text-center text-6xl font-semibold"
+          >
             {item}
           </div>
         ))}

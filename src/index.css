@@ -30,9 +30,9 @@ h3 {
 }
 
 .break-text {
-  white-space: pre-line; /* Preserve new lines and allow wrapping */
-  word-wrap: break-word; /* Prevent long words from overflowing */
-  display: block; /* Ensures proper block formatting */
+  white-space: pre-line; 
+  word-wrap: break-word;
+  display: block;
 }
 
 .flex-column {

@@ -39,17 +39,17 @@ export const SkillsText = [
 export const ProjectsData = [
   {
     title: 'Yard Manager',
-    link: '#',
+    link: 'https://yard-rg.vercel.app/',
     class: 'yardApp',
   },
   {
     title: 'Driver App',
-    link: '#',
+    link: 'https://cat-facts-omega.vercel.app/',
     class: 'driverApp',
   },
   {
     title: 'Harlekin',
-    link: '#',
+    link: 'https://harlekin-home-page.vercel.app/',
     class: 'harlekinApp',
   },
 ];

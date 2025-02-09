@@ -39,7 +39,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
 
             {/* Download CV Button */}
             <a
-              href="/Lebenslauf.pdf" 
+              href={`${import.meta.env.BASE_URL}Lebenslauf.pdf`} 
               download="Lebenslauf.pdf"
               className="flex items-center gap-2 bg-black text-white px-4 py-2 rounded-md shadow-md transition-all hover:bg-gray-900 hover:scale-105 "
             >

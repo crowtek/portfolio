@@ -4,7 +4,7 @@ import { useGLTF } from '@react-three/drei';
 import { useSpring, a } from '@react-spring/three';
 
 function GblElement() {
-  const { scene } = useGLTF('/portfolio/react_logo.glb');
+  const { scene } = useGLTF(`${import.meta.env.BASE_URL}react_logo.glb`);
   const gblElementRef = useRef();
   const [movement, setMovement] = useState({ x: 0, y: 0, rotX: 0, rotY: 0 });
 

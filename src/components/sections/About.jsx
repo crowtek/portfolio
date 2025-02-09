@@ -34,7 +34,7 @@ export const About = () => {
     offset: ['start start', 'end start'],
   });
 
-  const translateY = useSpring(useTransform(scrollYProgress, [0, 1], [0, 2000]), {
+  const translateY = useSpring(useTransform(scrollYProgress, [0, 1], [0, 2400]), {
     stiffness: 100,
     damping: 20,
     mass: 1,
@@ -59,7 +59,7 @@ export const About = () => {
           {SkillsText.map((skill, index) => (
             <motion.div
               key={index}
-              className="space-y-6 max-w-140 mt-20 md:mt-60 p-5"
+              className="space-y-6 max-w-140 mt-20 md:mt-60 p-10"
               variants={staggeredText(index)}
               initial="hidden"
               whileInView="visible"

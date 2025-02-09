@@ -5,7 +5,7 @@ import { projectCardAnimation } from '../animations';
 
 export const Projects = () => {
   return (
-    <section id="projects" className="min-h-screen flex flex-col items-center justify-center py-20">
+    <section id="projects" className="min-h-screen flex flex-col items-center justify-center py-20 relative z-10">
       <div className="px-4">
         <h2 className="text-5xl font-bold mb-20 text-left">Featured Projects</h2>
         <div className="flex flex-col md:flex-row gap-5">

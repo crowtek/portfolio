@@ -7,6 +7,7 @@ import { About } from './components/sections/About';
 import { Projects } from './components/sections/Projects';
 import './index.css';
 import { Contact } from './components/sections/Contact';
+import Background3d from '@/components/BackgroundElement';
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -22,6 +23,11 @@ function App() {
         <About />
         <Projects />
         <Contact />
+
+        {/* Background 3D Element */}
+        <div className="fixed top-0 left-0 w-full h-full opacity-45">
+          <Background3d />
+        </div>
       </div>
     </>
   );

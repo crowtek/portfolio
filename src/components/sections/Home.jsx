@@ -46,10 +46,7 @@ export const Home = () => {
         </motion.div>
       </div>
 
-      {/* Background 3D Element */}
-      <div className="absolute top-0 left-0 w-full h-full">
-        <Background3d />
-      </div>
+
     </section>
   );
 };

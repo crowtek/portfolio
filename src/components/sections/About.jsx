@@ -41,10 +41,10 @@ export const About = () => {
   });
 
   return (
-    <section id="about" ref={sectionRef} className="w-full pt-50 pb-32 overflow-hidden relative">
+    <section id="about" ref={sectionRef} className="w-full md:pt-50 pb-32 overflow-hidden relative">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 relative z-10">
         {/* Left Side */}
-        <motion.div style={{ y: translateY }}>
+        <motion.div className='hidden md:flex flex-col p-5' style={{ y: translateY }}>
           <motion.h2 className="text-4xl md:text-6xl font-bold" variants={titleFadeIn} initial="hidden" whileInView="visible">
             Skills
           </motion.h2>
@@ -59,7 +59,7 @@ export const About = () => {
           {SkillsText.map((skill, index) => (
             <motion.div
               key={index}
-              className="space-y-6 max-w-140 mt-60"
+              className="space-y-6 max-w-140 mt-20 md:mt-60 p-5"
               variants={staggeredText(index)}
               initial="hidden"
               whileInView="visible"

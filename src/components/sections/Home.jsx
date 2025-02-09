@@ -22,7 +22,7 @@ export const Home = () => {
         {/* Title Section */}
         <motion.div variants={slideInLeft} initial="initial" animate="animate" transition={{ duration: 2, delay: 1.5 }}>
           <h3>👋Hallo, mein Name ist Meik und ich bin Frontend-Entwickler</h3>
-          <h1 className="leading-[1.8] scale-y-[1.8] scale-x-[1.5] tracking-tighter title">Frontend Developer</h1>
+          <h1 className="leading-[1.8] scale-y-[1.8] scale-x-[1.5] tracking-tighter title ">Frontend Developer</h1>
         </motion.div>
 
         <motion.div variants={slideInRight} initial="initial" animate="animate" transition={{ duration: 2, delay: 1.5 }}>
@@ -30,8 +30,8 @@ export const Home = () => {
         </motion.div>
 
         {/* Location & Tech Icons */}
-        <motion.div variants={fadeInUp} initial="initial" animate="animate" transition={{ duration: 2, delay: 2.5 }} className="flex justify-between items-center gap-10 py-6 w-6xl">
-          <p className="text-4xl md:text-3xl text-black mb-8">Based in Germany, Hamburg</p>
+        <motion.div variants={fadeInUp} initial="initial" animate="animate" transition={{ duration: 2, delay: 2.5 }} className="flex flex-col lg:flex-row justify-between items-center gap-10 py-6 lg:w-6xl">
+          <p className="text-2xl md:text-3xl text-black mb-8">Based in Germany, Hamburg</p>
           <div className="flex items-center gap-4">
             {techIcons.map((icon, index) => (
               <motion.img key={index} src={icon.src} alt={icon.alt} width={50} height={50} />

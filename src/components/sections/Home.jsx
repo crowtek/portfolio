@@ -8,6 +8,7 @@ import FimgaIcon from '../../assets/icons/figma.png';
 import JSIcon from '@/assets/icons/javascript.png';
 
 
+
 const techIcons = [
   { src: ReactIcon, alt: 'React Icon' },
   { src: FimgaIcon, alt: 'Figma Icon' },

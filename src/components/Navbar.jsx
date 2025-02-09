@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { MenuItems } from "../constants";
-import { FaDownload } from "react-icons/fa"; // 🔹 Importiere das Download-Icon
+import { FaDownload } from "react-icons/fa"; 
+import Logo from '@/assets/logo.png';
 
 export const Navbar = ({ menuOpen, setMenuOpen }) => {
   useEffect(() => {
@@ -12,9 +13,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
       <div className="px-24 py-6">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <a href="#home" className="font-mono text-xl font-bold">
-            Meik<span className="text-blue-500">.Grünholz</span>
-          </a>
+          <img src={Logo} alt="Logo" width={140} height={120} />
 
           {/* Mobile Menu Button */}
           <button

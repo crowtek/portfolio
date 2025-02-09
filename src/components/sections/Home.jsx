@@ -19,17 +19,17 @@ export const Home = () => {
     <section id="home" className="min-h-screen flex items-center justify-center">
       <div className="text-center relative z-10 flex flex-col">
         {/* Title Section */}
-        <motion.div variants={slideInLeft} initial="initial" animate="animate" transition={{ type: 'spring', stiffness: 100, duration: 1, delay: 2 }}>
+        <motion.div variants={slideInLeft} initial="initial" animate="animate" transition={{ duration: 2, delay: 1.5 }}>
           <h3>👋Hallo, mein Name ist Meik und ich bin Frontend-Entwickler</h3>
           <h1 className="leading-[1.8] scale-y-[1.8] scale-x-[1.5] tracking-tighter title">Frontend Developer</h1>
         </motion.div>
 
-        <motion.div variants={slideInRight} initial="initial" animate="animate" transition={{ type: 'spring', stiffness: 100, duration: 1, delay: 2 }}>
+        <motion.div variants={slideInRight} initial="initial" animate="animate" transition={{ duration: 2, delay: 1.5 }}>
           <h1 className="secondTitle leading-[1.7] scale-y-[1.8] scale-x-[1.5] tracking-tight">& UI/UX Designer</h1>
         </motion.div>
 
         {/* Location & Tech Icons */}
-        <motion.div variants={fadeInUp} initial="initial" animate="animate" transition={{ duration: 1, delay: 2.5 }} className="flex justify-between items-center gap-10 py-6 w-6xl">
+        <motion.div variants={fadeInUp} initial="initial" animate="animate" transition={{ duration: 2, delay: 2.5 }} className="flex justify-between items-center gap-10 py-6 w-6xl">
           <p className="text-4xl md:text-3xl text-black mb-8">Based in Germany, Hamburg</p>
           <div className="flex items-center gap-4">
             {techIcons.map((icon, index) => (

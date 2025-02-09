@@ -57,8 +57,8 @@ export const Contact = () => {
   };
 
   return (
-    <section id="contact" className="flex items-center justify-center py-20 bg-gray-800">
-      <div className="p-20 w-200 bg-gray-800 rounded-2xl">
+    <section id="contact" className="flex items-center justify-center py-20 bg-black">
+      <div className="p-20 w-200  rounded-2xl">
         <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
           Schreib mir
         </h2>

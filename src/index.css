@@ -134,3 +134,9 @@ h3 {
   border-radius: 10px;
   padding: 10px;
 }
+
+
+::-webkit-scrollbar {
+  width: 0px; /* Starts hidden */
+  opacity: 0;
+}

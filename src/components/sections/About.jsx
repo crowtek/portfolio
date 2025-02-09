@@ -3,9 +3,27 @@ import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
 import { useRef } from 'react';
 import { titleFadeIn, iconScaleIn, staggeredText } from '../animations';
 
-// Import React Icons
-import { FaReact } from 'react-icons/fa';
-import { SiFigma, SiJavascript } from 'react-icons/si';
+// Import Icons
+import { FaReact, FaNodeJs, FaCss3Alt, FaHtml5 } from 'react-icons/fa';
+import { SiFigma, SiJavascript, SiNextdotjs, SiTailwindcss, SiMongodb, SiTypescript, SiRedux, SiFirebase, SiJest } from 'react-icons/si';
+
+// Mapping skills to their respective icons
+const skillIcons = {
+  "React.js": <FaReact className="text-blue-500 w-10 h-10" />,
+  "Next.js": <SiNextdotjs className="text-black w-10 h-10" />,
+  "JavaScript": <SiJavascript className="text-yellow-400 w-10 h-10" />,
+  "TypeScript": <SiTypescript className="text-blue-700 w-10 h-10" />,
+  "Redux": <SiRedux className="text-purple-600 w-10 h-10" />,
+  "Node.js": <FaNodeJs className="text-green-500 w-10 h-10" />,
+  "MongoDB": <SiMongodb className="text-green-600 w-10 h-10" />,
+  "Firebase": <SiFirebase className="text-yellow-500 w-10 h-10" />,
+  "Jest": <SiJest className="text-red-500 w-10 h-10" />,
+  "Figma": <SiFigma className="text-red-500 w-10 h-10" />,
+  "CSS3": <FaCss3Alt className="text-blue-600 w-10 h-10" />,
+  "HTML5": <FaHtml5 className="text-orange-500 w-10 h-10" />,
+  "Tailwind CSS": <SiTailwindcss className="text-blue-400 w-10 h-10" />,
+};
+
 
 export const About = () => {
   const sectionRef = useRef(null);
@@ -31,10 +49,8 @@ export const About = () => {
             Skills
           </motion.h2>
 
-          <motion.div className="py-10 flex items-center gap-4" variants={iconScaleIn} initial="hidden" whileInView="visible">
-            <FaReact className="text-blue-500 w-10 h-10" />
-            <SiFigma className="text-red-500 w-10 h-10" />
-            <SiJavascript className="text-yellow-400 w-10 h-10" />
+          <motion.div  className="py-10 flex flex-wrap justify-start gap-4 max-w-100"variants={iconScaleIn} initial="hidden" whileInView="visible">
+            {Object.values(skillIcons)}
           </motion.div>
         </motion.div>
 

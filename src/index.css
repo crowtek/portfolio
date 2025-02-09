@@ -127,12 +127,24 @@ h3 {
   background-image: url('./assets/driverApp.png');
   background-size: cover;
 }
+.yardApp {
+  background-image: url('./assets/YardApp.png');
+  background-size: cover;
+}
+.harlekinApp {
+  background-image: url('./assets/harlekin.png');
+  background-size: cover;
+}
 
 .projectCard {
   width: 30vw;
   height: 18vw;
-  border-radius: 10px;
-  padding: 10px;
+  border-radius: 20px;
+  box-shadow: #16161694 10px 10px 15px;
+  cursor: pointer;
+}
+.projectCard:hover {
+  border: black 2px solid;
 }
 
 

@@ -40,7 +40,7 @@ export const ProjectsData = [
   {
     title: 'Yard Manager',
     link: '#',
-    class: 'driverApp',
+    class: 'yardApp',
   },
   {
     title: 'Driver App',
@@ -48,8 +48,8 @@ export const ProjectsData = [
     class: 'driverApp',
   },
   {
-    title: 'E-commerce App',
+    title: 'Harlekin',
     link: '#',
-    class: 'driverApp',
+    class: 'harlekinApp',
   },
 ];
